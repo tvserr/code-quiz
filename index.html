@@ -7,22 +7,28 @@
    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <nav>
-      <span class="highscore">View Highscores</span>
-   </nav>
-   
-   <section class="start">
+   <section class="welcome-message">
       <h2>Coding Quiz Challenge</h2>
-      <h4>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scores/time by ten seconds!</h4>
-      <button class="startButton">Start Quiz</button>
+      <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score and time by 10 seconds!</p>
+      <button id="start-quiz">Start Quiz</button>
+   <section class="quiz-container">
+      <section class="question-container">
+         <div id="question-title"></div>
+      </section>
+   
+      <section class="choices-container">
+         <div id="choices">
+            <button class="btn btn-option" id="option1">Option 1</button>
+            <button class="btn btn-option" id="option2">Option 2</button>
+            <button class="btn btn-option" id="option3">Option 3</button>
+            <button class="btn btn-option" id="option4">Option 4</button>
+         </div>
+      </section>
    </section>
 
-   <section class="quiz">
-      <span class="timerCount"></span>
-   </section>
-
-   <section class="results">
-
+   <section class="scores-container">
+      <span id="user-score">
+      </span>
    </section>
 
    <script src="./script.js"></script>
