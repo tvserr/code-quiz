@@ -7,33 +7,37 @@
    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-   <section class="welcome-message">
+   <header>
       <span id="highscores">View Highscores</span>
       <span id="timer-display"></span>
+   </header>
+   <main>
+   <section class="welcome-message">
       <h2>Coding Quiz Challenge</h2>
       <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score and time by 10 seconds!</p>
       <button id="start-quiz">Start Quiz</button>
-
+   </section>
    <section class="quiz-container">
-      <section class="question-container">
-         <div id="question-title"></div>
-      </section>
-   
-      <section class="choices-container">
+         <div id="question-title">Question</div>
          <div id="choices">
-            <button class="btn btn-option" id="option1">Option 1</button>
-            <button class="btn btn-option" id="option2">Option 2</button>
-            <button class="btn btn-option" id="option3">Option 3</button>
-            <button class="btn btn-option" id="option4">Option 4</button>
+            <ul>
+               <li><button class="choice-btn1">Choice 1</button></li>
+               <li><button class="choice-btn2">Choice 2</button></li>
+               <li><button class="choice-btn3">Choice 3</button></li>
+               <li><button class="choice-btn4">Choice 4</button></li>
+            </ul>
          </div>
-      </section>
+         <div id="answer-result">Answer Result</div>
    </section>
 
    <section class="scores-container">
-      <span id="user-score">
-      </span>
+      <p>All Done!</p>
+      <span id="user-score"></span>
+      <p>Enter initials:</p>
+         <input type="text" name="" id="initials">
+         <input type="button" value="Submit">
    </section>
-
+   </main>
    <script src="./assets/script.js"></script>
 </body>
 </html>

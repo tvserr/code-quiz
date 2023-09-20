@@ -6,8 +6,15 @@
 
 body {
    display: flex;
-   align-items: center;
+   flex-direction: column;
    justify-content: center;
+   text-align: center;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .welcome-message {
@@ -23,18 +30,6 @@ p {
    margin: 20px 0;
 }
 
-#highscores {
-   display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
-}
-
-#timer-display {
-   display: flex;
-   justify-content: flex-end;
-   align-items: flex-start;
-}
-
 #start-quiz {
    font-size: 15px;
    background: blueviolet;
@@ -46,23 +41,24 @@ p {
 }
 
 .quiz-container {
-   width: 100px;
+   margin-top: 50px;
    display: flex;
    flex-direction: column;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   border-radius: 5px;
-   text-align: center;
 }
 
-.question-container {
-   display: flex;
-   justify-content: center;
+ul {
+   margin: 20px 0;
+}
+
+li {
    align-items: center;
-   flex-direction: column;
+   margin: 5px 0;
 }
 
-.btn {
+button {
    font-size: 15px;
    background: blueviolet;
    border-radius: 5px;
@@ -72,7 +68,7 @@ p {
    cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
    color: darkgray;
 }
 
@@ -86,8 +82,4 @@ p {
 #user-score {
    font-size: 30px;
    font-weight: bold;
-}
-
-.hide {
-   display: none;
 }
