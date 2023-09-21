@@ -12,7 +12,7 @@ N/A
 
 The following image displays the code quiz:
 
-![Code Quiz](/assets/codequiz-screenshot.png)
+![Code Quiz](./assets/codequiz-screenshot.png)
 
 There are 6 questions with 4 choices each. You are given 75 seconds to finish the quiz. For each correct answer, you will be given 5 points. For each wrong answer, your timer will go down by 10 seconds.
 
