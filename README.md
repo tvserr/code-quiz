@@ -16,6 +16,8 @@ The following image displays the code quiz:
 
 There are 6 questions with 4 choices each. You are given 75 seconds to finish the quiz. For each correct answer, you will be given 5 points. For each wrong answer, your timer will go down by 10 seconds.
 
+The game ends when the timer ends or when you have answered all the questions.
+
 At the end of the quiz, you may enter your initials to save your score. This will then be saved in the highscore list.
 
 Try it out here: https://tvserr.github.io/code-quiz/
