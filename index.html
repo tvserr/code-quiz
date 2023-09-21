@@ -31,11 +31,19 @@
    </section>
 
    <section class="scores-container">
-      <p>All Done!</p>
+      <p id="alldone">All Done!</p>
       <span id="user-score"></span>
-      <p>Enter initials:</p>
-         <input type="text" name="" id="initials">
-         <input type="button" value="Submit">
+      <p>Enter initials:
+         <input type="text" name="initials" id="enter-initials">
+      </p>
+         <button id="submit-initials">Submit Score</button>
+   </section>
+
+   <section class="highscores-container">
+      <p id="highscore-list">Highscores</p>
+      <span id="all-scores"></span>
+      <button id="backBtn">Go Back</button>
+      <button id="clearBtn">Clear Highscores</button>
    </section>
    </main>
    <script src="./assets/script.js"></script>

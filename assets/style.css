@@ -80,6 +80,15 @@ button:hover {
 }
 
 #user-score {
-   font-size: 30px;
+   font-size: 15px;
+}
+
+#alldone {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+#highscore-list {
+   font-size: 25px;
    font-weight: bold;
 }
