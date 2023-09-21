@@ -13,6 +13,9 @@ var allDone = document.getElementById("alldone");
 var enterInitials = document.getElementById("enter-initials");
 var submitBtn = document.getElementById("submit-initials");
 var allScores = document.getElementById("all-scores");
+var backBtn = document.getElementById("back-button");
+var clearBtn = document.getElementById("clear-button");
+var viewBtn = document.getElementById("view-highscores");
 
 var choiceBtn1 = document.querySelector(".choice-btn1");
 var choiceBtn2 = document.querySelector(".choice-btn2");
@@ -165,9 +168,9 @@ function showScore() {
 function endQuiz() {
    quizContainer.style.display = "none";
    scoresContainer.style.display = "block";
-   userScore.innerHTML = "Your final score is " + score + "!";
    timerDisplay.style.display = "none";
    highscoresContainer.style.display = "none";
+   userScore.innerHTML = "Your final score is " + score + "!";
    }
 
 function saveInitials(event) {
@@ -205,5 +208,21 @@ submitBtn.addEventListener("click", function () {
    saveInitials();
    showHighscores();
 });
+
+backBtn.addEventListener("click", function () {
+   welcomeMessage.style.display = "block";
+   highscoresContainer.style.display = "none";
+})
+
+clearBtn.addEventListener("click", function () {
+   localStorage.removeItem("highscores");
+   allScores.innerHTML = "";
+})
+
+viewBtn.addEventListener("click", function () {
+   welcomeMessage.style.display = "none";
+   saveInitials();
+   showHighscores();
+})
 
 startBtn.addEventListener("click", startQuiz);
